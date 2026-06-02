@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Drushti Divyang Vikas V Sanshodhan Sanstha</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.8; color: #333; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
+        
+        /* Header */
+        header { background: #1a365d; color: white; padding: 20px 0; position: sticky; top: 0; z-index: 100; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .logo h1 { font-size: 22px; color: #ffd700; }
+        .logo p { font-size: 12px; color: #ffd700; }
+        .reg-box { background: #c53030; padding: 8px 15px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+        
+        /* Nav */
+        nav { background: #dd6b20; padding: 12px 0; }
+        nav ul { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+        nav a { color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; }
+        nav a:hover { background: white; color: #dd6b20; }
+        
+        /* Hero */
+        .hero { background: linear-gradient(rgba(26,54,93,0.9), rgba(26,54,93,0.9)); padding: 70px 0; text-align: center; color: white; }
+        .hero h2 { font-size: 36px; color: #ffd700; margin-bottom: 15px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto; }
+        
+        /* Sections */
+        section { padding: 60px 0; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { font-size: 32px; color: #1a365d; margin-bottom: 10px; }
+        
+        /* About */
+        .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+        .about-card { background: #f7fafc; padding: 25px; border-radius: 15px; text-align: center; }
+        .about-card h3 { color: #1a365d; margin-bottom: 10px; }
+        
+        /* Diwali */
+        #diwali { background: #1a365d; color: white; }
+        #diwali h2 { color: #ffd700; }
+        .diwali-msg { text-align: center; font-size: 18px; font-style: italic; margin-bottom: 40px; }
+        .program-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .program-box { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; text-align: center; }
+        .program-box h3 { color: #ffd700; font-size: 22px; margin-bottom: 15px; }
+        
+        /* Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+        .service-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); border-bottom: 4px solid #dd6b20; }
+        .service-card h3 { color: #1a365d; margin-bottom: 10px; }
+        .badge { display: inline-block; padding: 5px 15px; border-radius: 15px; font-size: 12px; font-weight: bold; margin-top: 10px; }
+        .free { background: #c6f6d5; color: #276749; }
+        .sale { background: #feebc8; color: #c05621; }
+        
+        /* Team */
+        .team-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .member { background: #e9d8fd; border: 2px solid #805ad5; padding: 12px 25px; border-radius: 30px; font-weight: bold; color: #6b21a8; }
+        
+        /* Donation */
+        #donation { background: #e8f5e9; }
+        .donation-box { background: white; padding: 40px; border-radius: 20px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .bank-details { background: #f7fafc; padding: 25px; border-radius: 15px; margin-top: 20px; text-align: left; }
+        .bank-details p { margin: 10px 0; font-size: 15px; }
+        
+        /* Footer */
+        footer { background: #1a365d; color: white; padding: 40px 0; text-align: center; }
+        footer p { margin: 8px 0; }
+        
+        @media (max-width: 768px) {
+            .header-flex { justify-content: center; text-align: center; }
+            nav a { padding: 8px 15px; font-size: 12px; }
+            .hero h2 { font-size: 26px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-flex">
+            <div class="logo">
+                <h1>Divya Drushti Divyang Vikas V Sanshodhan Sanstha</h1>
+                <p>Empowering Differently Abled Individuals</p>
+            </div>
+            <div class="reg-box">Reg. No: 372/2019 | Founded: 29/05/2019</div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#diwali">Diwali Program</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#donation">Donation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h2>Divya Drushti Divyang Vikas V Sanshodhan Sanstha</h2>
+        <p>Empowering differently-abled individuals through education, support, and celebrating festivals together. All projects done on CSR funds and public donations.</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Us</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>To empower all differently-abled persons with free education and equal opportunities.</p>
+            </div>
+            <div class="about-card">
+                <h3>Founded</h3>
+                <p>29th May 2019<br>Registration Number: 372/2019</p>
+            </div>
+            <div class="about-card">
+                <h3>Funding</h3>
+                <p>All projects done on CSR funds from companies and public donations.</p>
+            </div>
+            <div class="about-card">
+                <h3>Location</h3>
+                <p>2nd Floor, Haritkranti Building, Market Yard, Ahilyanagar, Maharashtra- 414001</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="diwali">
+    <div class="container">
+        <div class="section-title">
+            <h2>Diwali Special Program</h2>
+        </div>
+        <p class="diwali-msg">"Har Divyang Ka Diwali Roshan Ho, Har Ghar Mein Khushiyan Sawere Ho"</p>
+        
+        <div class="program-grid">
+            <div class="program-box">
+                <h3>Music Orchestra</h3>
+                <p>A special musical program for everyone with devotional and festive songs. An evening of joy and celebration with your family!</p>
+            </div>
+            <div class="program-box">
+                <h3>Family Celebration</h3>
+                <p>Making Diwali special for Divyang brothers and sisters and their families. Together we celebrate the festival of lights!</p>
+            </div>
+            <div class="program-box">
+                <h3>Supporting Needy</h3>
+                <p>Poor daily wage workers and underprivileged families also receive support to make their Diwali special.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Free Computer Classes</h3>
+                <p>We provide free computer training to all differently-abled persons to help them gain digital skills.</p>
+                <span class="badge free">FREE</span>
+            </div>
+            <div class="service-card">
+                <h3>Free Government Form Filling</h3>
+                <p>We help citizens fill government forms completely FREE of service charge.</p>
+                <span class="badge free">FREE</span>
+            </div>
+            <div class="service-card">
+                <h3>Phenyl & Incense Sticks</h3>
+                <p>We sell phenyl bottles (different flavours) and premium incense sticks to support our causes.</p>
+                <span class="badge sale">Available for Sale</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="team">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Team (Governing Body)</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: 30px; color: #555;">Community members - all are Government Officers on different posts</p>
+        <div class="team-grid">
+            <div class="member">Krushna Tavale</div>
+            <div class="member">Amol Chavhan</div>
+            <div class="member">Sunil Bachakar</div>
+            <div class="member">Nilesh Shinde</div>
+            <div class="member">Subhash Shinde</div>
+            <div class="member">Mahesh Dane</div>
+            <div class="member">Kiran Khetmalas</div>
+            <div class="member">Dhavan Umredkar</div>
+            <div class="member">Pradip Londhe</div>
+        </div>
+    </div>
+</section>
+
+<section id="donation">
+    <div class="container">
+        <div class="donation-box">
+            <h2>Donation Account</h2>
+            <p>Your generous donations help us continue our free services for the Divyang.</p>
+            <div class="bank-details">
+                <p><strong>Account Name:</strong> Divya Drushti Divyang Vikas V Sanshodhan Sanstha</p>
+                <p><strong>Account No.:</strong> 79270200000165</p>
+                <p><strong>Bank:</strong> BANK OF BARODA</p>
+                <p><strong>Branch:</strong> Telikhunt Ahilyanagar</p>
+                <p><strong>IFSC Code:</strong> BARB0VJAHME</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 2nd Floor, Haritkranti Building, Market Yard, Ahilyanagar, Maharashtra- 414001</p>
+        <p><strong>Phone:</strong> 9850885946 | 8888498992</p>
+        <p><strong>Email:</strong> divyadrushti2019@gmail.com</p>
+        <br>
+        <p>&copy; 2024 Divya Drushti Divyang Vikas V Sanshodhan Sanstha. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
